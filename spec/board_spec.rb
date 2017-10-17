@@ -11,7 +11,8 @@ RSpec.describe Board do
     end
 
     it "has a structure of two cells" do
-      expect(board.structure).to eq([0, 0])
+      expect(board.structure).to eq([[0, 0],
+                                     [0, 0]])
     end
 
   end

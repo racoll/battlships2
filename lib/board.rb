@@ -9,7 +9,8 @@ class Board
   end
 
   def structure
-    [0, 0]
+    [[0, 0],
+     [0, 0]]
   end
 
 end
