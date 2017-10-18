@@ -1,10 +1,10 @@
 class Board
 
    def initialize
-     @cell_count = 4
-     @structure = [[0, 0],[0, 0]]
-    #  @structure = ("0, 0\n0, 0")
+     @cell_count = 9
+     @structure = [[0, 0, 0],[0, 0, 0],[0, 0, 0]]
    end
+
 
     def cell_count
       @cell_count
