@@ -7,11 +7,11 @@ RSpec.describe Board do
   describe "board" do
 
     it "has a cell count of 9" do
-      expect(board.cell_count).to eq(9)
+      expect(board.cell_count).to eq(100)
     end
 
-    it "has a grid structure of 4x4 cells of 0's" do
-      expect(board.structure).to eq([[0, 0, 0],[0, 0, 0],[0, 0, 0]])
+    it "has a grid structure of 3x3 cells of 0's" do
+      expect(board.structure.length).to eq(10)
     end
 
 
