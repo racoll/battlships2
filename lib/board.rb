@@ -3,7 +3,7 @@ class Board
    def initialize(grid = default_grid)
      @cell_count = 100
     #  @structure = [[0, 0, 0],[0, 0, 0],[0, 0, 0]]
-    @grid = grid
+     @grid = grid
    end
 
 
@@ -14,14 +14,20 @@ class Board
 
 
     def default_grid
-      grid ||= Array.new(10) {Array.new(10) { "0" } }
-      grid.each do |cell|
+      @grid ||= Array.new(10) {Array.new(10) { "0" } }
+      @grid.each do |cell|
         puts cell.each { |p| p }.join(" ")
       end
     end
 
     def place_ship(number)
       "altered grid!"
+      # @grid
+    end
+
+    def position
+      grid1 = @grid[1]
+      grid1[4]
     end
 
 

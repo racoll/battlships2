@@ -21,6 +21,9 @@ RSpec.describe Board do
       expect(board.place_ship(1)).to eq("altered grid!")
     end
 
+    it "can can isolate a specific cell on the grid" do
+      expect(board.position).to eq("0")
+    end
   end
 
 end
