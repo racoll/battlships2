@@ -30,5 +30,9 @@ class Board
       grid1[1]
     end
 
+    def position(x,y)
+      @grid[x][y] = "x"
+    end
+
 
 end

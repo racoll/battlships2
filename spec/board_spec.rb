@@ -24,6 +24,10 @@ RSpec.describe Board do
     it "can can isolate the first cell on the grid" do
       expect(board.position_1).to eq("0")
     end
+
+    it "can specify a specific position on the board" do
+      expect(board.position(0, 0)).to eq("x")
   end
+end
 
 end
