@@ -10,7 +10,7 @@ RSpec.describe Board do
       expect(board.cell_count).to eq(100)
     end
 
-    it "has a grid structure of 3x3 cells of 0's" do
+    it "has a grid structure of 10x10 cells of 0's" do
       expect(board.default_grid.length).to eq(10)
     end
 
