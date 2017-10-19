@@ -25,9 +25,9 @@ class Board
       # @grid
     end
 
-    def position
-      grid1 = @grid[1]
-      grid1[4]
+    def position_1
+      grid1 = @grid[0]
+      grid1[1]
     end
 
 
