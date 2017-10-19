@@ -20,6 +20,9 @@ class Board
       end
     end
 
+    def place_ship(number)
+      "altered grid!"
+    end
 
 
 end
