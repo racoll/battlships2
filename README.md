@@ -5,6 +5,7 @@ BREAK THESE DOWN FURTHER!
 As a player
 So that I can amuse myself
 I would like to start a 10x10 game of battleships.
+DONE
 
 # what is being 'changed'? The BOARD
 
@@ -12,6 +13,7 @@ I would like to start a 10x10 game of battleships.
 As a player
 So that I can understand what's going on
 I would like to be able to see the current state of the game.
+DONE
 
 # what is being changed? the GAME
 

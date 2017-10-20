@@ -35,12 +35,17 @@ RSpec.describe Board do
     end
 
     it "can change a specific cell on the board" do
-      expect(board.position_ship(0, 0, "x")).to eq("x")
+      expect(board.place_ship_1(0, 0, "x")).to eq("x")
   end
 
     it "can display the state of the board" do
       expect(board.display_board).to eq(board.grid)
     end
+
+    it "can accept a ship of size 3 and change the board accordingly" do
+      expect(board.place_ship_3(0, 0, "x")).to eq("x, x, x")
+    end
+
 
 
 end
