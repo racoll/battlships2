@@ -19,6 +19,7 @@ class Board
 
     def place_ship_1(x, y, val) # pass 3 arguments, x and y positions and val as the value
       @grid[x][y] = val # says that at position x,y of @grid, replace with val.
+      @grid
     end
 
     def display_board
@@ -27,9 +28,18 @@ class Board
       end
     end
 
+    # def place_ship_3(x, y, val)
+    #   @grid[x][y] = "x, x, x" # this just replaces one "0" with 3 "x"s
+    # end
+
     def place_ship_3(x, y, val)
-      "x, x, x"
+      # a = [1, 2, 3, 4]
+      # a[1..2] = [0] * 2
+      # @grid[0][0..2] = "x, " * 3
+      @grid[0][0..2] = ["x"] * 3
+      @grid
     end
+
 
 
 
