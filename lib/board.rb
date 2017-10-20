@@ -32,13 +32,26 @@ class Board
     #   @grid[x][y] = "x, x, x" # this just replaces one "0" with 3 "x"s
     # end
 
-    def place_ship_3(x, y, val)
-      # a = [1, 2, 3, 4]
-      # a[1..2] = [0] * 2
-      # @grid[0][0..2] = "x, " * 3
-      @grid[0][0..2] = ["x"] * 3
+    def place_ship_3_horizontal(x, y, val)
+      # @grid[x][0..2] = ["x"] * 3
+      @grid[x][y] = val
+      @grid[x][y+1] = val
+      @grid[x][y+2] = val
       @grid
     end
+
+    def place_ship_3_vertical(x, y, val)
+      @grid[x][y] = val
+      @grid[x+1][y] = val
+      @grid[x+2][y] = val
+      @grid
+      # location = @grid[6][4]
+      # location[6..8] = ["x"] *3
+      # @grid[6][4][4..2] = ["x"] * 3
+      # @grid
+    end
+
+    # eventually pass another argument of ship size!
 
 
 
