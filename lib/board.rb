@@ -45,10 +45,6 @@ class Board
       @grid[x+1][y] = val
       @grid[x+2][y] = val
       @grid
-      # location = @grid[6][4]
-      # location[6..8] = ["x"] *3
-      # @grid[6][4][4..2] = ["x"] * 3
-      # @grid
     end
     # eventually pass another argument of ship size!
 
@@ -66,26 +62,35 @@ class Board
     #     end
     # end
 
+
     # def attack(x, y, val)
     #   outcome = "MISS!"
     #   val = "-"
-    #     if @grid[x][y] == "0"
-    #        @grid[x][y] = val
-    #       elsif @grid[x][y] == "x"
-    #             outcome = "HIT!"
-    #             @grid[x][y] = val
-    #       else
-    #       @grid[x][y] = val
-    #     end
-    #     [@grid, outcome]
+    #     if @grid[x][y] == "x"
+    #       outcome = "HIT!"
+    #     else
+    #       # if it is a "0" AND it is not a "-"
+    #   end
+    #   @grid[x][y] = val
+    #   [@grid, outcome]
     # end
 
-    def attack(x, y, val)
-      val = "-"
-      @grid[x][y] = val
-      @grid
-    end
 
+    def attack(x, y)
+      # @grid[x][y] # need this??
+      location = @grid[x][y]
+      if location == "x"
+        puts "HIT!"
+        @grid[x][y] = "+"
+      elsif location == "0"
+        puts "MISS!"
+        @grid[x][y] = "-"
+      else location == "-"
+        raise "Error: Already attacked!"
+        @grid[x][y] = "-"
+      end
+      display_board
+    end
 
 
 end
