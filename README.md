@@ -75,3 +75,4 @@ returns error if cell is hit twice
 returns an error if ship is placed in non-existent cells
 returns error if shot is on non-existent cell
 # battlships2
+# battlships2
