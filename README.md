@@ -74,3 +74,4 @@ returns error if ship is already present where player wants to place a ship
 returns error if cell is hit twice
 returns an error if ship is placed in non-existent cells
 returns error if shot is on non-existent cell
+# battlships2
