@@ -93,25 +93,25 @@ BOARD responsibility
 ### RESPONSIBILITIES OF CLASSES:
 
 - GAME:
-Initializes player1
-Initializes player2
-determines whose go it is
-places a ship for a player
-allows a player to take a shot
-switch goes/players after each go
+  - Initializes player1
+  - Initializes player2
+  - determines whose go it is
+  - places a ship for a player
+  - allows a player to take a shot
+  - switch goes/players after each go
 
 - PLAYER:
-creates a player with a name
-creates a ship when a player is initialized
+  - creates a player with a name
+  - creates a ship when a player is initialized
 
 
 - BOARD:
-Is initialized with a 10x10 board (100 cells)
-can assign ships to cells vertically
-can assign ships to cells horizontally
-returns a miss when water is hit
-returns a hit when a ship is hit
-returns error if ship is already present where player wants to place a ship
-returns error if cell is hit twice
-returns an error if ship is placed in non-existent cells
-returns error if shot is on non-existent cell
+  - Is initialized with a 10x10 board (100 cells)
+  - can assign ships to cells vertically
+  - can assign ships to cells horizontally
+  - returns a miss when water is hit
+  - returns a hit when a ship is hit
+  - returns error if ship is already present where player wants to place a ship
+  - returns error if cell is hit twice
+  - returns an error if ship is placed in non-existent cells
+  - returns error if shot is on non-existent cell
