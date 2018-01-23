@@ -35,10 +35,19 @@ class Board
 
     def place_ship_3_horizontal(x, y, val)
       # @grid[x][0..2] = ["x"] * 3
-      @grid[x][y] = val
-      @grid[x][y+1] = val
-      @grid[x][y+2] = val
-      @grid
+      # occupied_spaces = @grid[x][0..2]
+      # occupied_spaces.each do |space|
+      #   space = val
+
+        spaces = @grid[x][0..2]
+        spaces.each do |element|
+        element.replace("x")
+      end
+
+      # @grid[x][y] = val
+      # @grid[x][y+1] = val
+      # @grid[x][y+2] = val
+      # @grid
     end
 
 
