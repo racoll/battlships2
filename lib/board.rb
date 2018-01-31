@@ -52,10 +52,16 @@ class Board
 
 
     def place_ship_3_vertical(x, y, val)
-      @grid[x][y] = val
-      @grid[x+1][y] = val
-      @grid[x+2][y] = val
-      @grid
+
+      spaces = @grid[x][0..2]
+      spaces.each do |element|
+      element.replace("x")
+
+      # @grid[x][y] = val
+      # @grid[x+1][y] = val
+      # @grid[x+2][y] = val
+      # @grid
+      end
     end
     # eventually pass another argument of ship size!
 
